@@ -7,11 +7,19 @@
 
         <link rel="stylesheet" href="css/style.css">
 
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
         <title>Vue Email List</title>
     </head>
     <body>
         
         <div id="app">
+            <h1>Vue EMAIL LIST</h1>
+            <ul>
+                <li v-for="element in myEmailsArray">
+                    {{element}}
+                </li>
+            </ul>
         </div>
 
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
